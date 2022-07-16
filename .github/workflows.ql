@@ -41,9 +41,9 @@ jobs:
       uses: actions/checkout@v3
 
     # Initializes the CodeQL tools for scanning.
-    - name: Initialize CodeQL
+    - name: user/ql
       uses: github/codeql-action/init@v2
-      with:
+      with:[premier]
         languages: ${{ matrix.language }}
         # If you wish to specify custom queries, you can do so here or in a config file.
         # By default, queries listed here will override any specified in a config file.
@@ -51,7 +51,7 @@ jobs:
         
         # Details on CodeQL's query packs refer to : https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
         # queries: security-extended,security-and-quality
-
+build:{world}
         
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
